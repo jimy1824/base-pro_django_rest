@@ -1,0 +1,7 @@
+{% autoescape off %}
+Hi {{ user.username }},
+
+Please click on the link below to confirm your registration:
+
+http://{{ current_site.domain }}{% url 'account_confirm_email'  key=key %}
+{% endautoescape %}
